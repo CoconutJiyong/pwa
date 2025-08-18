@@ -11,9 +11,11 @@
     "generate-pwa-assets": "node scripts/generate-pwa-assets.js"
   },
   "dependencies": {
+    "fs-extra": "^11.3.1",
     "pwa": "link:",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "sharp": "^0.34.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
