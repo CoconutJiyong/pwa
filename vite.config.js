@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["favicon.ico", "logo180.png"],
+      includeAssets: ["favicon.ico", "logo180.png",'maskable-icon-512x512.png'],
       manifest: {
         short_name: "KK Delivery",
         name: "KOKKOK Delivery",
@@ -23,9 +23,15 @@ export default defineConfig({
           },
           {
             src: "logo180.png",
-            type: "image/png",
             sizes: "180x180",
+            type: "image/png",
           },
+          {
+            src: 'maskable-icon-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'maskable'
+          }
         ],
       },
     }),
