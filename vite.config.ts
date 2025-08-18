@@ -35,7 +35,7 @@ export default defineConfig({
           sizes: "256x256 180x180 128x128 64x64 32x32 24x24 16x16",
           type: "image/svg+xml",
         }, {
-          src: "pwa-assets/splash.png",
+          src: "splash.png",
           sizes: "512x512",
           type: "image/png",
           purpose: "any maskable"
