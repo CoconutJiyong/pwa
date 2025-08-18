@@ -60,18 +60,12 @@ export default defineConfig({
       },
       // 🔹 스플래시/아이콘 자동 생성 옵션은 여기!
       pwaAssets: {
-        preset: {
-          ...minimal2023Preset,
-          appleSplashScreens: createCustomAppleSplashScreens({
-            padding: 0.5,
-            darkResizeOptions: { background: "#1f1f1f" },
-          }),
-        },
-        image: "public/pwa-assets/splash.png", // 원본 스플래시 이미지
-        // 타입스크립트에선 에러 날 수 있어서 무시 필요할 수도 있음
-        // @ts-ignore
-        headLinkOptions: {
-          preset: "2023",
+        pwaAssets: {
+          images: ["public/pwa-assets/splash.png"], // 여기 한 장만 넣으면 끝!
+          preset: "minimal-2023", // 최신 preset (iOS + Android 대응)
+          headLinkOptions: {
+            preset: "2023", // <link> 자동 생성
+          },
         },
       },
     }),
