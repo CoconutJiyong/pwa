@@ -11,7 +11,7 @@ export default defineConfig({
   plugins: [react(), 
     VitePWA({
     registerType: "autoUpdate",
-    includeAssets: ["favicon.ico", "logo180.png", "favicon.svg"],
+    includeAssets: ["favicon.ico", "logo180.png", "pwa-assets/splash.png"],
     manifest: {
       short_name: "KK Delivery",
       name: "KOKKOK Delivery",
@@ -31,11 +31,7 @@ export default defineConfig({
           sizes: "180x180",
         },
         {
-          src: "favicon.svg",
-          sizes: "256x256 180x180 128x128 64x64 32x32 24x24 16x16",
-          type: "image/svg+xml",
-        }, {
-          src: "splash.png",
+          src: "pwa-assets/splash.png",
           sizes: "512x512",
           type: "image/png",
           purpose: "any maskable"
@@ -45,7 +41,7 @@ export default defineConfig({
     pwaAssets: {
       config: "./pwa-assets.config.ts",
       preset: minimal2023Preset,
-      image: "public/favicon.png",
+      image: "public/pwa-assets/splash.png",
     },
   }),],
 })
