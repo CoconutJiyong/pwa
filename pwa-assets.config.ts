@@ -6,9 +6,10 @@ export const minimal2023Preset: Preset = {
     favicons: [[48, 'favicon.ico']]
   },
   maskable: {
-    sizes: [512]
+    sizes: [512],
+    resizeOptions:{background: 'transparent',fit:'contain'}
   },
   apple: {
-    sizes: [180]
+    sizes: [180],resizeOptions:{background: 'transparent',fit:'contain'}
   }
 }

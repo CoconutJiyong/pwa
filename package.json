@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "pwa-splash-assets": "node scripts/pwa-splash-assets.js",  
- "generate-assets": "pwa-assets-generator --preset minimal-2023 public/maskable-icon-512x512.png"
+    "generate-assets": "pwa-assets-generator --preset minimal-2023 public/logo180.svg"
   },
   "dependencies": {
     "fs-extra": "^11.3.1",
