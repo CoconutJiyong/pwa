@@ -8,8 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "pwa-splash-assets": "node scripts/pwa-splash-assets.js",  
-    "generate-assets": "pwa-assets-generator --preset minimal-2023 public/logo180.svg"
+    "pwa-splash-assets": "node scripts/pwa-splash-assets.js"
   },
   "dependencies": {
     "fs-extra": "^11.3.1",

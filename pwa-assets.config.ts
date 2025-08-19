@@ -7,9 +7,9 @@ export const minimal2023Preset: Preset = {
   },
   maskable: {
     sizes: [512],
-    resizeOptions:{background: 'transparent',fit:'contain'}
+    resizeOptions:{background: '#171717',fit:'cover'}
   },
   apple: {
-    sizes: [180],resizeOptions:{background: 'transparent',fit:'contain'}
-  }
+    sizes: [180],resizeOptions:{background: '#171717',fit:'cover'},
+  },
 }
