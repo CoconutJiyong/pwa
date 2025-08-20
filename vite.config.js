@@ -13,6 +13,7 @@ export default defineConfig({
         name: "KOKKOK Delivery",
         start_url: "/",
         display: "standalone",
+        orientation: "portrait",
         theme_color: "#ffffff",
         background_color: "#171717",
         icons: [
