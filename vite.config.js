@@ -15,7 +15,11 @@ export default defineConfig({
         display: "standalone",
         theme_color: "#ffffff",
         background_color: "#171717",
-        icons: [
+        icons: [    {
+          src: 'logo180.png',
+          sizes: '180x180',
+          type: 'image/png'
+        },
           {
             src: 'pwa-192x192.png',
             sizes: '192x192',
