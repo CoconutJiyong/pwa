@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -18,8 +18,28 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <h2>
+        <a href="kakaotalk://" target="_blank" rel="noopener noreferrer">
+          KOKOKO
+        </a>
+      </h2>
+      <h2>
+        <a href="weixin://" target="_blank" rel="noopener noreferrer">
+          Wechat
+        </a>
+      </h2>
+      <h2>
+        <a href="fb://" target="_blank" rel="noopener noreferrer">
+          Facebook
+        </a>
+      </h2>
+      <h2>
+        <a href="instagram://" target="_blank" rel="noopener noreferrer">
+          Instagram
+        </a>
+      </h2>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
