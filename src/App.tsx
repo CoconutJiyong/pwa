@@ -5,7 +5,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   const handleMessageSend = () => {
-    const phone = "821071010376";
+    const phone = "821057385019";
     const message = "Send message 테스트입니다.";
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
