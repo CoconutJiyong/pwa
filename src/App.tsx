@@ -4,6 +4,14 @@ import "./App.css";
 function App() {
   const [count, setCount] = useState(0);
 
+  const handleMessageSend = () => {
+    const phone = "821071010376";
+    const message = "Send message 테스트입니다.";
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+    window.location.href = url;
+  };
+
   return (
     <>
       <h1>Vite + React</h1>
@@ -25,7 +33,7 @@ function App() {
       </h2>
       <h2>
         <a href="weixin://" target="_blank" rel="noopener noreferrer">
-          Wechat
+          WeChat
         </a>
       </h2>
       <h2>
@@ -38,6 +46,9 @@ function App() {
           Instagram
         </a>
       </h2>
+      <button onClick={handleMessageSend}>
+        <h3>Send: </h3>
+      </button>
     </>
   );
 }
