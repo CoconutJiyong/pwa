@@ -47,7 +47,7 @@ function App() {
         </a>
       </h2>
       <button onClick={handleMessageSend}>
-        <h3>Send to message</h3>
+        <h3>Send</h3>
       </button>
     </>
   );
